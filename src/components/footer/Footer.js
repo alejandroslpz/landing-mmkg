@@ -9,17 +9,15 @@ const ImageCover = styled.div`
   height: 100vh;
   background-image: url(${ImagenFooter});
   background-size: cover;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 `;
 
 const Footer = () => {
   return (
     <ImageCover>
-      <Text />
-      <Cards />
+      <div className="container">
+        <Text />
+        <Cards />
+      </div>
     </ImageCover>
   );
 };

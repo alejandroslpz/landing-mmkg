@@ -1,12 +1,6 @@
 import React from "react";
 import styled from "@emotion/styled";
 
-const Container = styled.div`
-  text-align: center;
-  max-width: 50%;
-  margin-bottom: 70px;
-`;
-
 const Titulo = styled.h2`
   font-size: 28px;
   font-weight: 700;
@@ -14,21 +8,30 @@ const Titulo = styled.h2`
 `;
 
 const Texto = styled.p`
+  font-size: 12px;
   color: #fff;
+`;
+
+const TextContainer = styled.div`
+  padding-top: 10%;
 `;
 
 const Text = () => {
   return (
-    <Container>
-      <Titulo>Premio</Titulo>
-      <Texto>
-        Elige un destino, tu premio incluye: Vuelo redondo para dos personas
-        saliendo desde Ciudad de México, hotel 4 estrellas en el destino una
-        noche antes y una después del crucero, traslado
-        aeropuerto-hotel-aeropuerto, crucero en una (1) cabina interior para dos
-        personas por 7 días.*
-      </Texto>
-    </Container>
+    <TextContainer className="columns is-centered is-multiline">
+      <div className="column is-10-desktop">
+        <Titulo className="has-text-centered">Premio</Titulo>
+      </div>
+      <div className="column is-5-desktop">
+        <Texto className="has-text-centered">
+          Elige un destino, tu premio incluye: Vuelo redondo para dos personas
+          saliendo desde Ciudad de México, hotel 4 estrellas en el destino una
+          noche antes y una después del crucero, traslado
+          aeropuerto-hotel-aeropuerto, crucero en una (1) cabina interior para
+          dos personas por 7 días.*
+        </Texto>
+      </div>
+    </TextContainer>
   );
 };
 

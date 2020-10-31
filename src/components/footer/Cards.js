@@ -6,17 +6,19 @@ import d3 from "../../assets/img/d3.jpg";
 import d4 from "../../assets/img/d4.jpg";
 
 const Container = styled.div`
-  display: flex;
-  justify-content: center;
+  margin-top: 50px;
 `;
 
 const MainCard = styled.div`
-  width: 290px;
-  height: 430px;
+  @media (min-width: 768px) {
+    max-width: 290px;
+    min-height: 430px;
+    margin: 0px 5px;
+  }
+  margin: 10px 0px;
   background-color: #fff;
   border-radius: 10px;
   text-align: center;
-  margin: 0 5px;
   padding: 60px 20px;
 `;
 
@@ -31,8 +33,8 @@ const Texto = styled.p`
 
 const Cards = () => {
   return (
-    <Container>
-      <MainCard>
+    <Container className="columns is-centered is-desktop">
+      <MainCard className="column">
         <img src={d1} alt="Imagen Destino 1" />
         <div>
           <Titulo>Caribe</Titulo>
@@ -43,7 +45,7 @@ const Cards = () => {
           </Texto>
         </div>
       </MainCard>
-      <MainCard>
+      <MainCard className="column">
         <img src={d2} alt="Imagen Destino 2" />
         <div>
           <Titulo>Alaska</Titulo>
@@ -54,7 +56,7 @@ const Cards = () => {
           </Texto>
         </div>
       </MainCard>
-      <MainCard>
+      <MainCard className="column">
         <img src={d3} alt="Imagen Destino 3" />
         <div>
           <Titulo>Europa</Titulo>
@@ -65,7 +67,7 @@ const Cards = () => {
           </Texto>
         </div>
       </MainCard>
-      <MainCard>
+      <MainCard className="column">
         <img src={d4} alt="Imagen Destino 4" />
         <div>
           <Titulo>Hawaii</Titulo>
