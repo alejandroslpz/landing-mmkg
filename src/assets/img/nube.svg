@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="177px" height="62px" viewBox="0 0 177 62" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+    <title>Group 5</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-9.6%" y="-32.0%" width="119.3%" height="164.0%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Desk" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-833.000000, -105.000000)" fill="#EFF8FD">
+            <g id="Group-5" filter="url(#filter-1)" transform="translate(839.000000, 109.000000)">
+                <path d="M166,50 C159.983837,42.4307643 149.781715,36.4981201 141.419018,40.1486284 C136.707509,28.9016078 122.111975,25.1647239 113.647856,33.0385475 C118.078149,19.4366536 109.014719,2.75705856 96.4983337,0.329447823 C83.9819485,-2.09816291 70.9953344,9.21704891 68.8424239,23.5144941 C63.6745168,19.9776381 55.8788603,24.391889 55.2103977,31.2337507 C52.3567541,26.2239623 45.9487336,24.8965047 40.8038769,25.6647935 C35.6590202,26.4421745 30.9152411,32.3748187 32.4503999,38.0392438 C29.3432015,34.6524086 23.2855477,36.4617514 22.0316041,41.1578598 C14.1806265,37.2436784 3.98311486,41.3397033 0,50 L166,50 Z" id="Fill-3"></path>
+            </g>
+        </g>
+    </g>
+</svg>
