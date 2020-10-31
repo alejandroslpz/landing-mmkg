@@ -8,15 +8,14 @@ const ImagenBases = styled.div`
   height: 100vh;
   background-image: url(${ImagenBas});
   background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 `;
 
 const Bases = () => {
   return (
     <ImagenBases>
-      <Card />
+      <div className="container">
+        <Card />
+      </div>
     </ImagenBases>
   );
 };
