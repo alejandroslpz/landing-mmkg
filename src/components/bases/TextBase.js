@@ -21,6 +21,10 @@ const SubTitulo = styled.h3`
 const Texto = styled.p`
   margin: 15px 0px;
   font-size: 13px;
+
+  & a {
+    color: #00bbf0;
+  }
 `;
 
 const TextBase = () => {
