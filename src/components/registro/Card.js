@@ -6,7 +6,9 @@ const MainCard = styled.div`
   @media (min-width: 768px) {
     max-width: 490px;
     height: 360px;
+    margin-left: 0px;
   }
+  margin-left: 5px;
   background-color: #fff;
   border-radius: 10px;
   padding: 40px;

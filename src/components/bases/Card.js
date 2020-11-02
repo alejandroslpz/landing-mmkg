@@ -15,13 +15,17 @@ const MainCard = styled.div`
     overflow: scroll;
   }
 
+  @media (max-width: 600px) {
+    max-height: 500px;
+  }
+
   margin-top: 70px;
 `;
 
 const Card = () => {
   return (
     <div className="columns is-centered">
-      <MainCard className="column mr-3">
+      <MainCard className="column mx-1">
         <TextBase />
       </MainCard>
     </div>

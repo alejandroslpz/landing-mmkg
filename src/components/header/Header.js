@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "@emotion/styled";
 import ImagenHome from "../../assets/img/home.jpg";
+import ImagenHomeMobile from "../../assets/img/home-mobile.jpg";
 import Button from "./Button";
 import Text from "./Text";
 import Legend from "./Legend";
@@ -11,8 +12,14 @@ import NavHeader from "./NavHeader";
 const Home = styled.section`
   width: 100vw;
   height: 100vh;
-  background-image: url(${ImagenHome});
+  @media (min-width: 768px) {
+    background-image: url(${ImagenHome});
+    background-size: cover;
+  }
+  background-image: url(${ImagenHomeMobile});
+  background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   padding-top: 7%;
 `;
 
@@ -33,7 +40,7 @@ const Header = () => {
       <Container>
         <HomeContainer>
           <div className="columns">
-            <div className="column is-offset-2">
+            <div className="column">
               <Logo />
               <Text />
               <Button />

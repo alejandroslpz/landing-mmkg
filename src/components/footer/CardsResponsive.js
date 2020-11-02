@@ -15,7 +15,9 @@ import d4 from "../../assets/img/d4.jpg";
 // Sobretodo para los margenes entre cards y el cuadro azul al dar click en un card
 
 const Container = styled.div`
-  margin-top: 50px;
+  @media (min-width: 768px) {
+    margin-top: 50px;
+  }
 `;
 
 const MainCard = styled.div`
