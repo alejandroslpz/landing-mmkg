@@ -5,6 +5,8 @@ import Footer from "./components/footer/Footer";
 import { ParallaxProvider } from "react-scroll-parallax";
 import Registro from "./components/registro/Registro";
 import Bases from "./components/bases/Bases";
+import Burger from "./components/Burger";
+import NavResponsive from "./components/NavResponsive";
 
 const App = () => {
   const [display, setDisplay] = useState("none");
@@ -36,6 +38,8 @@ const App = () => {
 
   return (
     <ParallaxProvider>
+      <Burger />
+      <NavResponsive />
       <Nav display={display} seccion={seccion} />
       <Header />
       <Registro />

@@ -2,11 +2,14 @@ import React from "react";
 import styled from "@emotion/styled";
 
 const Navigation = styled.nav`
-  display: ${({ display }) =>
-    display === "flex" ? "flex" : "none"}; // Validación de posición de página
-  position: fixed;
-  width: 100vw;
-  background-color: #03213f; // Se tomo del mar del primer diseño
+  @media (min-width: 1024px) {
+    display: ${({ display }) =>
+      display === "flex" ? "flex" : "none"}; // Validación de posición de página
+    position: fixed;
+    width: 100vw;
+    background-color: #03213f; // Se tomo del mar del primer diseño
+  }
+  display: none;
 `;
 
 const Enlace = styled.a`

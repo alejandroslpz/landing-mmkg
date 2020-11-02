@@ -2,10 +2,14 @@ import React from "react";
 import styled from "@emotion/styled";
 
 const Navigation = styled.nav`
-  z-index: 2;
-  position: absolute;
-  top: 5%;
-  right: 17%;
+  @media (min-width: 1024px) {
+    display: block;
+    z-index: 2;
+    position: absolute;
+    top: 5%;
+    right: 17%;
+  }
+  display: none;
 `;
 
 const Enlace = styled.a`
