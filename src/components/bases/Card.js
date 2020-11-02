@@ -10,7 +10,11 @@ const MainCard = styled.div`
   -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
-  overflow: scroll;
+
+  @media (max-width: 768px) {
+    overflow: scroll;
+  }
+
   margin-top: 70px;
 `;
 
