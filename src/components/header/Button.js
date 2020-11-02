@@ -1,7 +1,12 @@
 import React from "react";
 import styled from "@emotion/styled";
 
+const BotonContainer = styled.div`
+  padding-left: 135px;
+`;
+
 const Boton = styled.button`
+  margin-top: 35px;
   text-transform: uppercase;
   background-color: #00bbf0;
   color: #fff;
@@ -18,7 +23,11 @@ const Boton = styled.button`
 `;
 
 const Button = () => {
-  return <Boton>Participar ahora</Boton>;
+  return (
+    <BotonContainer>
+      <Boton>Participar ahora</Boton>
+    </BotonContainer>
+  );
 };
 
 export default Button;
