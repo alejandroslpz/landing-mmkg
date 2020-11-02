@@ -12,13 +12,9 @@ const Texto = styled.p`
   color: #fff;
 `;
 
-const TextContainer = styled.div`
-  padding-top: 10%;
-`;
-
 const Text = () => {
   return (
-    <TextContainer className="columns is-centered is-multiline">
+    <div className="columns is-centered is-multiline">
       <div className="column is-10-desktop">
         <Titulo className="has-text-centered">Premio</Titulo>
       </div>
@@ -31,7 +27,7 @@ const Text = () => {
           dos personas por 7 días.*
         </Texto>
       </div>
-    </TextContainer>
+    </div>
   );
 };
 
