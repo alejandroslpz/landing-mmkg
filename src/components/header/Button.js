@@ -1,12 +1,8 @@
 import React from "react";
 import styled from "@emotion/styled";
 
-const BotonContainer = styled.div`
-  padding-left: 135px;
-`;
-
 const Boton = styled.button`
-  margin-top: 35px;
+  margin-top: 15px;
   text-transform: uppercase;
   background-color: #00bbf0;
   color: #fff;
@@ -24,9 +20,11 @@ const Boton = styled.button`
 
 const Button = () => {
   return (
-    <BotonContainer>
-      <Boton>Participar ahora</Boton>
-    </BotonContainer>
+    <div className="columns">
+      <div className="column">
+        <Boton>Participar ahora</Boton>
+      </div>
+    </div>
   );
 };
 

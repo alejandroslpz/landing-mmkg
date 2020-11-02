@@ -16,23 +16,35 @@ const Home = styled.section`
   padding-top: 7%;
 `;
 
+const Container = styled.div`
+  display: table;
+  text-align: center;
+`;
+
+const HomeContainer = styled.div`
+  display: table-cell;
+  vertical-align: middle;
+`;
+
 const Header = () => {
   return (
     <Home id="home" className="section">
       <NavHeader />
-      <div className="container">
-        <div className="columns">
-          <div className="column is-offset-2">
-            <Logo />
-            <Text />
-            <Button />
-            <Legend />
+      <Container>
+        <HomeContainer>
+          <div className="columns">
+            <div className="column is-offset-2">
+              <Logo />
+              <Text />
+              <Button />
+              <Legend />
+            </div>
           </div>
-        </div>
-        <Nube1 />
-        <Nube2 />
-        <Nube3 />
-      </div>
+          <Nube1 />
+          <Nube2 />
+          <Nube3 />
+        </HomeContainer>
+      </Container>
     </Home>
   );
 };

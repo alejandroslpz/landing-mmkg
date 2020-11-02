@@ -5,16 +5,17 @@ import NubeImagen from "../../assets/img/nube.svg";
 const Nube1Img = styled.div`
   position: absolute;
   top: 310px;
+  left: 250px;
 `;
 const Nube2Img = styled.div`
   position: absolute;
-  top: 0;
-  left: 650px;
+  top: 100px;
+  left: 850px;
 `;
 const Nube3Img = styled.div`
   position: absolute;
-  top: 170px;
-  right: -100px;
+  top: 200px;
+  right: 200px;
 `;
 
 const Nube1 = () => {

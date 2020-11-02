@@ -6,17 +6,19 @@ const Texto = styled.p`
   text-transform: uppercase;
   font-weight: 700;
   font-size: 15px;
-  width: 35%;
-  text-align: center;
-  margin-top: 15px;
+  font-style: italic;
 `;
 
 const Text = () => {
   return (
-    <Texto>
-      ¿Caribe, Alaska, Europa o Hawaii? Elige el destino que más quieras y Club
-      Premier se encarga del vuelo, el hospedaje y el crucero.
-    </Texto>
+    <div className="columns is-centered">
+      <div className="column is-6">
+        <Texto>
+          ¿Caribe, Alaska, Europa o Hawaii? Elige el destino que más quieras y
+          Club Premier se encarga del vuelo, el hospedaje y el crucero.
+        </Texto>
+      </div>
+    </div>
   );
 };
 

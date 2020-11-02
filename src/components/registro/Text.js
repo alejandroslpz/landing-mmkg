@@ -21,12 +21,12 @@ const TextContainer = styled.div`
 const Text = () => {
   return (
     <TextContainer className="columns is-centered is-multiline">
-      <div className="column is-10-desktop">
+      <div className="column is-12-mobile is-12-tablet is-12-desktop">
         <Titulo className="has-text-centered">
           ¡El registro se ha cerrado!
         </Titulo>
       </div>
-      <div className="column is-12-desktop">
+      <div className="column is-12-mobile is-12-tablet is-12-desktop">
         <Texto className="has-text-centered">El registro se ha cerrado.</Texto>
         <Texto className="has-text-centered mt-3">
           Espera proximas noticias del Game Show.
