@@ -15,10 +15,10 @@ const Texto = styled.p`
 const Text = () => {
   return (
     <div className="columns is-centered is-multiline">
-      <div className="column is-10-desktop">
+      <div className="column is-12-mobile is-10-tablet is-10-desktop">
         <Titulo className="has-text-centered">Premio</Titulo>
       </div>
-      <div className="column is-5-desktop">
+      <div className="column is-12-mobile is-5-tablet is-5-desktop">
         <Texto className="has-text-centered">
           Elige un destino, tu premio incluye: Vuelo redondo para dos personas
           saliendo desde Ciudad de México, hotel 4 estrellas en el destino una
