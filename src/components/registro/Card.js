@@ -19,7 +19,7 @@ const MainCard = styled.div`
 const Card = () => {
   return (
     <div className="columns is-centered">
-      <MainCard className="column is-offset-7">
+      <MainCard className="column is-offset-7 mr-3">
         <Text />
       </MainCard>
     </div>

@@ -3,7 +3,7 @@ import styled from "@emotion/styled";
 import ImagenReg from "../../assets/img/registro.png";
 import Card from "./Card";
 
-const ImagenRegistro = styled.div`
+const ImagenRegistro = styled.section`
   width: 100vw;
   height: 100vh;
   background-image: url(${ImagenReg});
@@ -12,7 +12,7 @@ const ImagenRegistro = styled.div`
 
 const Registro = () => {
   return (
-    <ImagenRegistro>
+    <ImagenRegistro id="registro" className="section">
       <div className="container">
         <Card />
       </div>
