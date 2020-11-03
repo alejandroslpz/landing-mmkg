@@ -1,8 +1,7 @@
 import React from "react";
 import styled from "@emotion/styled";
-import ImagenFooter1 from "../../assets/img/premio.png";
+// import ImagenFooter1 from "../../assets/img/premio.png";
 import ImagenFooter2 from "../../assets/img/premio.jpg";
-import ImagenBas from "../../assets/img/bases.jpg";
 import CardsResponsive from "./CardsResponsive";
 import Text from "./Text";
 
