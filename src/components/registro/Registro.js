@@ -5,9 +5,11 @@ import Card from "./Card";
 
 const ImagenRegistro = styled.section`
   width: 100vw;
-  height: 100vh;
+  height: 110vh;
   background-image: url(${ImagenReg});
   background-size: cover;
+  position: relative;
+  margin-top: -40px !important;
 `;
 
 const Registro = () => {

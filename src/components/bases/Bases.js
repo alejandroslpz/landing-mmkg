@@ -2,21 +2,23 @@ import React from "react";
 import styled from "@emotion/styled";
 import ImagenBas from "../../assets/img/bases.jpg";
 import Card from "./Card";
+import { Parallax } from "react-parallax";
 
-const ImagenBases = styled.section`
-  width: 100vw;
-  height: 100vh;
-  background-image: url(${ImagenBas});
-  background-position: center;
+const ParallaxContainer = styled(Parallax)`
+  margin-top: -50px !important;
 `;
 
 const Bases = () => {
   return (
-    <ImagenBases id="bases" className="section">
-      <div className="container">
-        <Card />
+    <ParallaxContainer bgImage={ImagenBas} strength={400}>
+      <div id="bases" className="section">
+        <div className="container">
+          <div style={{ height: "100vh" }}>
+            <Card />
+          </div>
+        </div>
       </div>
-    </ImagenBases>
+    </ParallaxContainer>
   );
 };
 

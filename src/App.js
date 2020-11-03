@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import Header from "./components/header/Header";
 import Nav from "./components/Nav";
 import Footer from "./components/footer/Footer";
-import { ParallaxProvider } from "react-scroll-parallax";
 import Registro from "./components/registro/Registro";
 import Bases from "./components/bases/Bases";
 import Burger from "./components/Burger";
@@ -37,7 +36,7 @@ const App = () => {
   }, [seccion]);
 
   return (
-    <ParallaxProvider>
+    <>
       <Burger />
       <NavResponsive />
       <Nav display={display} seccion={seccion} />
@@ -45,7 +44,7 @@ const App = () => {
       <Registro />
       <Bases />
       <Footer />
-    </ParallaxProvider>
+    </>
   );
 };
 

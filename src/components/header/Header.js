@@ -8,19 +8,19 @@ import Legend from "./Legend";
 import Logo from "./Logo";
 import { Nube1, Nube2, Nube3 } from "./Nube";
 import NavHeader from "./NavHeader";
+import { Parallax } from "react-parallax";
 
-const Home = styled.section`
+const Home = styled(Parallax)`
   width: 100vw;
-  height: 100vh;
-  @media (min-width: 768px) {
+  height: 110vh;
+  /* @media (min-width: 768px) {
     background-image: url(${ImagenHome});
     background-size: cover;
   }
   background-image: url(${ImagenHomeMobile});
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  padding-top: 7%;
+  background-position: center; */
 `;
 
 const Container = styled.div`
@@ -35,23 +35,25 @@ const HomeContainer = styled.div`
 
 const Header = () => {
   return (
-    <Home id="home" className="section">
-      <NavHeader />
-      <Container>
-        <HomeContainer>
-          <div className="columns">
-            <div className="column">
-              <Logo />
-              <Text />
-              <Button />
-              <Legend />
+    <Home bgImage={ImagenHome} strength={650}>
+      <div id="home" className="section">
+        <NavHeader />
+        <Container>
+          <HomeContainer>
+            <div className="columns">
+              <div className="column">
+                <Logo />
+                <Text />
+                <Button />
+                <Legend />
+              </div>
             </div>
-          </div>
-          <Nube1 />
-          <Nube2 />
-          <Nube3 />
-        </HomeContainer>
-      </Container>
+            <Nube1 />
+            <Nube2 />
+            <Nube3 />
+          </HomeContainer>
+        </Container>
+      </div>
     </Home>
   );
 };
