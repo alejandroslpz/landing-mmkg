@@ -19,7 +19,7 @@ const MainCard = styled.div`
     max-height: 500px;
   }
 
-  margin-top: 70px;
+  margin: 70px 0px 30px 0px;
 `;
 
 const Card = () => {

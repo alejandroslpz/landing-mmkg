@@ -8,12 +8,6 @@ import d2 from "../../assets/img/d2.jpg";
 import d3 from "../../assets/img/d3.jpg";
 import d4 from "../../assets/img/d4.jpg";
 
-// Nota:
-
-// Es necesario modificar la libreria de estilos de slick-carousel para poner
-// los estilos exactos a corde de diseño 4
-// Sobretodo para los margenes entre cards y el cuadro azul al dar click en un card
-
 const Container = styled.div`
   @media (min-width: 768px) {
     margin-top: 50px;
@@ -23,7 +17,7 @@ const Container = styled.div`
 const MainCard = styled.div`
   @media (min-width: 768px) {
     max-width: 290px;
-    margin: 0px 5px;
+    margin: 0px 5px 50px 0px;
   }
   height: 430px;
   padding: 40px 20px 30px 20px;
