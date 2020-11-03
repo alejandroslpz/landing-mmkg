@@ -13,7 +13,7 @@ const App = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      if (window.pageYOffset > 900) {
+      if (window.pageYOffset > 850) {
         setDisplay("flex");
       } else {
         setDisplay("none");
@@ -23,13 +23,13 @@ const App = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      if (window.pageYOffset < 900) {
+      if (window.pageYOffset <= 850) {
         setSeccion("Home");
-      } else if (window.pageYOffset < 1800) {
+      } else if (window.pageYOffset < 1700) {
         setSeccion("Registro");
-      } else if (window.pageYOffset < 2700) {
+      } else if (window.pageYOffset <= 2500) {
         setSeccion("Bases");
-      } else if (window.pageYOffset < 3600) {
+      } else {
         setSeccion("Premio");
       }
     });
