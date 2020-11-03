@@ -13,7 +13,7 @@ const Bases = () => {
     <ParallaxContainer bgImage={ImagenBas} strength={400}>
       <div id="bases" className="section">
         <div className="container">
-          <div style={{ height: "100vh" }}>
+          <div style={{ height: "110vh" }}>
             <Card />
           </div>
         </div>

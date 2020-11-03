@@ -6,10 +6,14 @@ import Card from "./Card";
 const ImagenRegistro = styled.section`
   width: 100vw;
   height: 110vh;
-  background-image: url(${ImagenReg});
-  background-size: cover;
   position: relative;
   margin-top: -40px !important;
+  background-size: cover;
+  background-image: url(${ImagenReg});
+
+  @media (max-width: 768px) {
+    background-position: center;
+  }
 `;
 
 const Registro = () => {

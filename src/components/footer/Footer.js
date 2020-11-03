@@ -7,7 +7,7 @@ import Text from "./Text";
 
 const ImageCover = styled.section`
   width: 100vw;
-  height: 100vh;
+  height: 110vh;
   background-image: url(${ImagenFooter2});
   background-position: center bottom;
 `;
