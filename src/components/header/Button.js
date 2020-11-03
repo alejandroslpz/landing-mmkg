@@ -20,7 +20,7 @@ const Boton = styled.button`
 
 const Button = () => {
   return (
-    <div className="columns">
+    <div className="columns animate__animated animate__zoomIn">
       <div className="column">
         <Boton>Participar ahora</Boton>
       </div>

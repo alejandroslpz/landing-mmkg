@@ -36,7 +36,7 @@ const HomeContainer = styled.div`
 const Header = () => {
   return (
     <Home bgImage={ImagenHome} strength={650}>
-      <div id="home" className="section">
+      <div id="home" className="section" style={{ paddingTop: "10%" }}>
         <NavHeader />
         <Container>
           <HomeContainer>

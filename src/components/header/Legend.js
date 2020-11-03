@@ -13,7 +13,7 @@ const Leyenda = styled.p`
 
 const Legend = () => {
   return (
-    <div className="columns">
+    <div className="columns animate__animated animate__zoomIn">
       <LeyendaContainer className="column">
         <Leyenda>Permiso segob dgrtc/1916/2019</Leyenda>
       </LeyendaContainer>

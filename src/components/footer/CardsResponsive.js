@@ -27,7 +27,6 @@ const MainCard = styled.div`
   }
   height: 430px;
   padding: 40px 20px 30px 20px;
-  margin: 0px;
   background-color: #fff;
   border-radius: 10px;
   text-align: center;
@@ -78,6 +77,7 @@ let settings = {
         slidesToShow: 2,
         slidesToScroll: 2,
         initialSlide: 2,
+        arrows: false,
       },
     },
     {
@@ -85,15 +85,22 @@ let settings = {
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
+        arrows: false,
       },
     },
   ],
 };
 
+const StyleSlider = styled(Slider)`
+  @media (min-width: 768px) {
+    margin: 0px 70px !important;
+  }
+`;
+
 const CardsResponsive = () => {
   return (
     <Container>
-      <Slider {...settings}>
+      <StyleSlider {...settings}>
         <MainCard>
           <ImgContainer>
             <img src={d1} alt="Imagen Destino 1" />
@@ -147,7 +154,7 @@ const CardsResponsive = () => {
             </Texto>
           </TextContainer>
         </MainCard>
-      </Slider>
+      </StyleSlider>
     </Container>
   );
 };

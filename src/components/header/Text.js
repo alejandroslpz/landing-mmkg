@@ -11,8 +11,8 @@ const Texto = styled.p`
 
 const Text = () => {
   return (
-    <div className="columns is-centered">
-      <div className="column is-6">
+    <div className="columns is-centered animate__animated animate__zoomIn">
+      <div className="column is-5">
         <Texto>
           ¿Caribe, Alaska, Europa o Hawaii? Elige el destino que más quieras y
           Club Premier se encarga del vuelo, el hospedaje y el crucero.
