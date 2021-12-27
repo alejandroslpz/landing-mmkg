@@ -42,6 +42,7 @@ const App = () => {
       <Nav display={display} seccion={seccion} />
       <Header />
       <Registro />
+      <h1>Prueba</h1>
       <Bases />
       <Footer />
     </>
